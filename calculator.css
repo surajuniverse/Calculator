@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Gotham Rounded,sans-serif ;
+    font-weight: normal;
+}
+
+body{
+    background: linear-gradient(to right,rgb(39, 219, 117),rgb(64, 17, 134));
+}
+
+.main{
+    display: grid ;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+
+}
+
+.main button{
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid white;
+    background: rgb(160, 183, 170,.75);
+}
+
+.main > button:hover{
+    background: rgb(160, 183, 170,.95);
+}
+
+.span-2{
+    grid-column: span 2;
+}
+
+.screen{
+    grid-column: 1 /-1 ;
+    background: rgb(12, 12, 11,.75);
+}
